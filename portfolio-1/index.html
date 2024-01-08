@@ -29,23 +29,31 @@
               
                 <path id="pth" fill="none" style="stroke-dasharray:235; stroke-dashoffset:235;" stroke="rgb(250,0,0)" stroke-width="72" d="M115,60C15,175 235,175 155,65" clip-path="url(#clip)" />
               </svg> -->
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g stroke="#000" stroke-width="1" fill="black">
-                <path id="path" d="M31.5294 14.2118C31.5294 18.8819 28.7623 22.9082 24.7793 24.7351C26.4612 23.3496 27.5322 21.248 27.5322 18.896C27.5322 14.7642 24.2259 11.4042 20.112 11.3205C20.0574 11.3167 20.0075 11.3167 19.9529 11.3167C19.8983 11.3167 19.8485 11.3167 19.7939 11.3205C18.2673 11.4033 17.0588 12.6663 17.0588 14.2108V28.6814C17.0588 33.4748 13.1699 37.3638 8.37646 37.3638V14.2118C8.37646 7.81928 13.5605 2.63528 19.9529 2.63528C26.3454 2.63528 31.5294 7.81928 31.5294 14.2118Z"/>
-                </g>
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Logo do site">
                 <style>
                     @keyframes clip-circle {
-                        from {
-                            clip-path: circle(0px);
+                        0% {
+                           stroke-dashoffset: 60px; 
                         }
-                        to {
-                            clip-path: circle(40px);
+            
+                        100% {
+                            stroke-dashoffset: 0px;
                         }
                     }
-                    #path {
-                        animation: clip-circle ease 2s;
+                    #path2 {
+                        animation: clip-circle linear 1s;
                     }
-                </style>
+                    </style>
+                    <clipPath id="clip">
+                        <path
+                        d="m 31.5294,14.2118 c 0,4.6701 -2.7671,8.6964 -6.7501,10.5233 1.6819,-1.3855 2.7529,-3.4871 2.7529,-5.8391 0,-4.1318 -3.3063,-7.4918 -7.4202,-7.5755 -0.0546,-0.0038 -0.1045,-0.0038 -0.1591,-0.0038 -0.0546,0 -0.1044,0 -0.159,0.0038 -1.5266,0.0828 -2.7351,1.3458 -2.7351,2.8903 v 14.4706 c 0,4.7934 -3.8889,8.6824 -8.68234,8.6824 v -23.152 c 0,-6.39252 5.18404,-11.57652 11.57644,-11.57652 6.3925,0 11.5765,5.184 11.5765,11.57652 z"
+                        id="path1" />
+                    </clipPath>   
+                 <path
+                    style="stroke: black; stroke-width:15px; stroke-dasharray:60px"
+                    clip-path="url(#clip)"
+                 d="m 11.161548,36.849133 c 0,0 -0.454054,-20.678214 2.082777,-26.595461 C 15.781156,4.3364244 23.634802,2.390635 28.037383,9.7196265 32.439964,17.048618 25.420561,24.245661 25.420561,24.245661"
+                 id="path2" />
                 <g stroke="#000" stroke-width="1" fill="black" class="animate__animated animate__fadeInUp animate__delay-2s">
                 <path d="M21.9992 16.2582C23.1294 15.128 23.1294 13.2956 21.9992 12.1654C20.8689 11.0351 19.0365 11.0351 17.9063 12.1654C16.7761 13.2956 16.7761 15.128 17.9063 16.2582C19.0365 17.3884 20.8689 17.3884 21.9992 16.2582Z"/>
                 </g>
@@ -69,7 +77,7 @@
             <object id="imagem_svg" type="image/svg+xml" data="./assets/img/hero.svg"></object>
             <div class="content__hero">
                 <p class="display">Hello I'am <strong>Alfatist.</strong></p>
-                <p class="display"><strong>Fullstack</strong> <b class="outline">developer</b></p>
+                <p class="display"><strong>Fullstack</strong> <strong class="outline">developer</strong></p>
                 <p class="display">Based in <strong>Brazil.</strong></p>
             </div>
             <div class="about_me__hero">
@@ -87,7 +95,7 @@
             </div>
         </section>
         <section class="skills">
-            <p>My <b>Skills</b></p>
+            <p class="display">My <strong>Skills</strong></p>
             <ul class="stacks">
                 <li class="stack">
                     <img src="./assets/img/icon-react.svg" alt="">
@@ -116,7 +124,8 @@
                 
             </ul>
         </section>
-
+        <section class="experiences invert"> <p class="display">My <strong>Experience</strong></p> </section>
+        
     </main>
     <footer></footer>
 </body>

@@ -1,6 +1,8 @@
 :root{
     --primary-color: #FFF;
     --secondary-color: #000;
+    --paragraph-primary-color: #71717A;
+    --paragraph-secondary-color: #D4D4D8;
 }
 
 *{
@@ -33,6 +35,10 @@ header{
     justify-content: space-between;
 }
 
+strong{
+    font-weight: 800;
+}
+
 .logo_container{
     display: flex;
     gap: 0.75rem;
@@ -61,8 +67,12 @@ nav{
 }
 
 
+main{
+    padding: 1rem 0;
+}
+
 main > *{
-    padding: 2.5rem 0;
+    padding: 2.5rem 1rem;
 }
 
 .hero{
@@ -90,15 +100,13 @@ main > *{
     
 }
 
-b.outline{
+strong.outline{
     color: var(--primary-color);
     font-family: 'Sora';
     font-size: 28px;
-    font-weight: 800;
     color: var(--primary-color);
     font-family: 'Sora';
     font-size: 28px;
-    font-weight: 800;
     text-shadow: 1.4px 1.4px 0 #000 , -1.4px -1.4px 0 #000, -1.4px 1.4px 0 #000, 1.4px -1.4px 0 #000, 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -142,21 +150,11 @@ b.outline{
     border-color: var(--secondary-color);
 }
 
-.skills > p{
+main > section > p{
     display: flex;
-    font-family: Sora;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
     gap: 1rem;
     justify-content: center;
-    line-height: 32px; /* 114.286% */
-    letter-spacing: -0.56px;
     padding: 1.5rem;
-}
-
-.skills > p b{
-    font-weight: 800;
 }
 
 .stacks{
@@ -189,13 +187,10 @@ b.outline{
     border: 2px solid var(--primary-color);
 }
 
-@keyframes anim {
-    100% {
-        stroke-dashoffset: -235;
-        
-    }
-    }
-    
-    #pth {
-    animation: anim 10s linear infinite;
-    }
+.invert {
+    --temp: var(--primary-color);
+    --primary-color: var(--secondary-color);
+    --secondary-color: var(--temp);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
