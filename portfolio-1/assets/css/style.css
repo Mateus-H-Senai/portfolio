@@ -157,6 +157,11 @@ main > section > p{
     padding: 1.5rem;
 }
 
+.skills > .display{
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
 .stacks{
     display: grid;
     gap: 1.25rem;
@@ -188,9 +193,34 @@ main > section > p{
 }
 
 .invert {
-    --temp: var(--primary-color);
-    --primary-color: var(--secondary-color);
-    --secondary-color: var(--temp);
-    color: var(--primary-color);
     background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
+
+.experiences > .display{
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.experiences li{
+    align-self: stretch;
+    border-radius: 10px;
+    border: 1px solid var(--Zinc-500, #71717A);
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+    padding: 1.9rem 1.5rem;
+}
+
+.experiences li div{
+    margin-bottom: 1.75rem;
+}
+
+.experiences li img{
+    width: 32px;
+    max-height: 32px;
+}
+ul{
+    list-style: none;
+}
+
